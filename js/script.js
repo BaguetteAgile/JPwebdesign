@@ -1,0 +1,45 @@
+
+
+    window.silex = window.silex || {}
+    window.silex.data = {"site":{"width":1362},"pages":[{"id":"page-home","displayName":"Home","link":{"linkType":"LinkTypePage","href":"#!page-home"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-contact","displayName":"Contact","link":{"linkType":"LinkTypePage","href":"#!page-contact"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-confidentialit-","displayName":"Confidentialité","link":{"linkType":"LinkTypePage","href":"#!page-confidentialit-"},"canDelete":true,"canProperties":true,"canMove":true,"canRename":true,"opened":false},{"id":"page-site-vitrine","displayName":"site-vitrine","link":{"linkType":"LinkTypePage","href":"#!page-site-vitrine"},"canDelete":true,"canRename":true,"canMove":true,"canProperties":true},{"id":"page-cv-en-ligne","displayName":"cv-en-ligne","link":{"linkType":"LinkTypePage","href":"#!page-cv-en-ligne"},"canDelete":true,"canRename":true,"canMove":true,"canProperties":true}]}
+$(function() {
+    $('.hero-scroll-down').click(function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $("#after-hero").offset().top
+        }, 500);
+    });
+})
+
+
+
+/* animation on scroll widget */
+$(function() {
+    var $animation_elements = $('.animation-element');
+    var $window = $(window);
+
+    function check_if_in_view() {
+    var window_height = $window.height();
+    var window_top_position = $window.scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
+    
+    $.each($animation_elements, function() {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+    
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) &&
+            (element_top_position <= window_bottom_position)) {
+        $element.addClass('in-view');
+        } else {
+        $element.removeClass('in-view');
+        }
+    });
+    }
+
+    $window.on('scroll resize', check_if_in_view);
+    $window.trigger('scroll');
+
+})
+/* /animation on scroll widget */
