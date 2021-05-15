@@ -43,3 +43,23 @@ $(function() {
 
 })
 /* /animation on scroll widget */
+
+/* Jarallax */
+
+$(function() {
+    var elements = $('.jarallax').jarallax({
+        //onInit: function(){ console.log('onInit', this)},
+        onCoverImage: function(){
+            var container = $('#jarallax-container-' + this.instanceID).children()[0]
+            if (container) {
+                container = $(container)
+                container.css({
+                    'width': (container.width() / silex.scale) + 'px',
+                    'height': (container.height() / silex.scale) + 'px',
+                })
+            }
+        }
+    });
+});
+
+/* End of Jarallax */
