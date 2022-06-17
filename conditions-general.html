@@ -22,10 +22,8 @@
 
 <!--  tarteaucitron -->
 
-<script src="https://tarteaucitron.io/load.js?domain=www.jpwebdesign.be&amp;uuid=2ab80a6415d900c478d80d25e53fe78d7003f445"></script>
 
-
-        <script src="/tarteaucitron/tarteaucitron.js"></script>
+<script src="/tarteaucitron/tarteaucitron.js"></script>
 
         <script type="text/javascript">
         tarteaucitron.init({
@@ -38,6 +36,7 @@
     	  "orientation": "middle", /* Banner position (top - bottom) */
        
           "groupServices": false, /* Group services by category */
+          "serviceDefaultState": "wait", /* Default state (true - wait - false) */
                            
     	  "showAlertSmall": false, /* Show the small banner on bottom right */
     	  "cookieslist": false, /* Show the cookie list */
@@ -70,6 +69,7 @@
           "mandatoryCta": true /* Show the disabled accept button when mandatory on */
         });
         </script>
+        
 
         <!-- Abla Analytics -->
 
@@ -160,7 +160,7 @@ fbq('track', 'PageView');
 
 <div class="editable-style section-element silex-id-1622142335489-1 hide-on-desktop"><div class="editable-style container-element silex-id-1622142335490-2 silex-element-content website-width prevent-draggable"><div class="editable-style text-element silex-id-1622142370480-3 silex-component-hamburger prevent-resizable prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1655464899351_666 closed">
+<div class="hamburger-menu_1655469041295_172 closed">
     <div class="hamburger-btn fixed">
       <span></span>
       <span></span>
@@ -205,13 +205,13 @@ fbq('track', 'PageView');
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1655464899351_666').classList.remove('open');
-    document.querySelector('.hamburger-menu_1655464899351_666').classList.add('closed');
+    document.querySelector('.hamburger-menu_1655469041295_172').classList.remove('open');
+    document.querySelector('.hamburger-menu_1655469041295_172').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1655464899351_666').classList.add('open');
-    document.querySelector('.hamburger-menu_1655464899351_666').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1655469041295_172').classList.add('open');
+    document.querySelector('.hamburger-menu_1655469041295_172').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -221,7 +221,7 @@ fbq('track', 'PageView');
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1655464899351_666').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1655469041295_172').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -229,10 +229,10 @@ fbq('track', 'PageView');
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1655464899351_666 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1655469041295_172 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1655464899351_666 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1655469041295_172 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
