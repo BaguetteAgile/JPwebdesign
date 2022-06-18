@@ -22,8 +22,7 @@
 
 <!--  tarteaucitron -->
 
-
-<script src="/tarteaucitron/tarteaucitron.js"></script>
+        <script src="/tarteaucitron/tarteaucitron.js"></script>
 
         <script type="text/javascript">
         tarteaucitron.init({
@@ -36,7 +35,6 @@
     	  "orientation": "middle", /* Banner position (top - bottom) */
        
           "groupServices": false, /* Group services by category */
-          "serviceDefaultState": "wait", /* Default state (true - wait - false) */
                            
     	  "showAlertSmall": false, /* Show the small banner on bottom right */
     	  "cookieslist": false, /* Show the cookie list */
@@ -69,7 +67,6 @@
           "mandatoryCta": true /* Show the disabled accept button when mandatory on */
         });
         </script>
-        
 
         <!-- Abla Analytics -->
 
@@ -105,6 +102,7 @@
 <script type="text/javascript">
         (tarteaucitron.job = tarteaucitron.job || []).push('openstreetmap');
         </script>
+        <div class="openstreetmap" data-url="url" width="width" height="height"></div>
 
 <!-- Jarallax -->
 
@@ -149,7 +147,7 @@
 
 <div class="editable-style section-element silex-id-1622142335489-1 hide-on-desktop"><div class="editable-style container-element silex-id-1622142335490-2 silex-element-content website-width prevent-draggable"><div class="editable-style text-element silex-id-1622142370480-3 silex-component-hamburger prevent-resizable prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1655469041295_172 closed">
+<div class="hamburger-menu_1655555566562_808 closed">
     <div class="hamburger-btn fixed">
       <span></span>
       <span></span>
@@ -180,7 +178,7 @@
             
                 <li><a href="update-de-votre-site.html">Update de votre site</a></li>
             
-                <li><a href="contact.html" class="">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             
                 <li><a href="tarifs.html">Tarifs</a></li>
             
@@ -194,13 +192,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1655469041295_172').classList.remove('open');
-    document.querySelector('.hamburger-menu_1655469041295_172').classList.add('closed');
+    document.querySelector('.hamburger-menu_1655555566562_808').classList.remove('open');
+    document.querySelector('.hamburger-menu_1655555566562_808').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1655469041295_172').classList.add('open');
-    document.querySelector('.hamburger-menu_1655469041295_172').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1655555566562_808').classList.add('open');
+    document.querySelector('.hamburger-menu_1655555566562_808').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -210,7 +208,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1655469041295_172').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1655555566562_808').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -218,10 +216,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1655469041295_172 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1655555566562_808 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1655469041295_172 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1655555566562_808 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
