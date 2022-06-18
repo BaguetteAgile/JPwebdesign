@@ -79,43 +79,32 @@
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2003L40JF0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-2003L40JF0');
-</script>
+        <script type="text/javascript">
+        tarteaucitron.user.gtagUa = 'G-2003L40JF0';
+        // tarteaucitron.user.gtagCrossdomain = ['example.com', 'example2.com'];
+        tarteaucitron.user.gtagMore = function () { /* add here your optionnal gtag() */ };
+        (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+        </script>
 
 <!-- Hotjar Tracking Code for https://www.jpwebdesign.be -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3022191,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+<script type="text/javascript">
+        (tarteaucitron.job = tarteaucitron.job || []).push('hotjar');
+        </script>
+        <script type="text/javascript">tarteaucitron.user.hotjarId = 3022191;tarteaucitron.user.HotjarSv = 6;</script>
 
 
 <!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '384514233041018');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=384514233041018&amp;ev=PageView&amp;noscript=1"></noscript>
+<script type="text/javascript">
+        tarteaucitron.user.facebookpixelId = '384514233041018'; tarteaucitron.user.facebookpixelMore = function () { /* add here your optionnal facebook pixel function */ };
+        (tarteaucitron.job = tarteaucitron.job || []).push('facebookpixel');
+        </script>
 <!-- End Facebook Pixel Code -->
+
+<!-- Open Street Map -->
+<script type="text/javascript">
+        (tarteaucitron.job = tarteaucitron.job || []).push('openstreetmap');
+        </script>
 
 <!-- Jarallax -->
 
@@ -191,7 +180,7 @@ fbq('track', 'PageView');
             
                 <li><a href="update-de-votre-site.html">Update de votre site</a></li>
             
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="">Contact</a></li>
             
                 <li><a href="tarifs.html" class="page-link-active">Tarifs</a></li>
             
