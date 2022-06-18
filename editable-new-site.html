@@ -86,9 +86,6 @@ $(function() {
 
 <!--  tarteaucitron -->
 
-<script src="https://tarteaucitron.io/load.js?domain=www.jpwebdesign.be&uuid=2ab80a6415d900c478d80d25e53fe78d7003f445"></script>
-
-
         <script src="/tarteaucitron/tarteaucitron.js"></script>
 
         <script type="text/javascript">
@@ -143,33 +140,33 @@ $(function() {
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2003L40JF0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-2003L40JF0');
-</script>
+        <script type="text/javascript">
+        tarteaucitron.user.gtagUa = 'G-2003L40JF0';
+        // tarteaucitron.user.gtagCrossdomain = ['example.com', 'example2.com'];
+        tarteaucitron.user.gtagMore = function () { /* add here your optionnal gtag() */ };
+        (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+        </script>
+
+<!-- Hotjar Tracking Code for https://www.jpwebdesign.be -->
+<script type="text/javascript">
+        (tarteaucitron.job = tarteaucitron.job || []).push('hotjar');
+        </script>
+        <script type="text/javascript">tarteaucitron.user.hotjarId = 3022191;tarteaucitron.user.HotjarSv = 6;</script>
 
 
 <!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '384514233041018');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=384514233041018&ev=PageView&noscript=1"
-/></noscript>
+<script type="text/javascript">
+        tarteaucitron.user.facebookpixelId = '384514233041018'; tarteaucitron.user.facebookpixelMore = function () { /* add here your optionnal facebook pixel function */ };
+        (tarteaucitron.job = tarteaucitron.job || []).push('facebookpixel');
+        </script>
 <!-- End Facebook Pixel Code -->
+
+<!-- Open Street Map -->
+<script type="text/javascript">
+        (tarteaucitron.job = tarteaucitron.job || []).push('openstreetmap');
+        </script>
+        <div class="openstreetmap" data-url="url" width="width" height="height"></div>
 
 <!-- Jarallax -->
 
