@@ -18,11 +18,10 @@
     
 
     
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="JPwebDesign est le concepteur de site internet qui reflète votre société. Web Designer Liège wallonie Belgique Saint Georges sur Meuse"><link href="css/jpweb-Design-faveicone.png" rel="shortcut icon"><link href="https://fontlibrary.org/en/font/fantasque-sans-mono" rel="stylesheet" class="silex-custom-font"><script src="js/unslider-min.js"></script><link rel="stylesheet" href="css/unslider.css"><meta content="summary" property="twitter:card"><meta property="og:type" content="website"><meta property="twitter:title" content="JPwebDesign  Freelance Création du site web qui ressemble à votre entreprise"><meta property="og:title" content="JPwebDesign  Freelance Création du site web qui ressemble à votre entreprise"><meta property="twitter:description" content="JPwebDesign  Freelance Création du site web qui ressemble à votre entreprise Contactez moi au plus vite !!"><meta property="og:description" content="JPwebDesign  Freelance Création du site web qui ressemble à votre entreprise Contactez moi au plus vite !!"><meta property="twitter:image" content="https://www.jpwebdesign.be/Social-Network.jpg"><meta property="og:image" content="https://www.jpwebdesign.be/Social-Network.jpg"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="JPwebDesign est le concepteur de site internet qui reflète votre société. Web Designer Liège wallonie Belgique Saint Georges sur Meuse"><link href="css/jpweb-Design-faveicone.png" rel="shortcut icon"><link href="https://fontlibrary.org/en/font/fantasque-sans-mono" rel="stylesheet" class="silex-custom-font"><script src="js/unslider-min.js"></script><link rel="stylesheet" href="css/unslider.css"><meta content="summary" property="twitter:card"><meta property="og:type" content="website"><meta property="twitter:title" content="JPwebDesign  Freelance Création du site web qui ressemble à votre entreprise"><meta property="og:title" content="JPwebDesign  Freelance Création du site web qui ressemble à votre entreprise"><meta property="twitter:description" content="JPwebDesign  Freelance Création du site web qui ressemble à votre entreprise Contactez moi au plus vite !!"><meta property="og:description" content="JPwebDesign  Freelance Création du site web qui ressemble à votre entreprise Contactez moi au plus vite !!"><meta property="twitter:image" content="https://www.jpwebdesign.be/Social-Network.jpg"><meta property="og:image" content="https://www.jpwebdesign.be/Social-Network.jpg"><script src="js/script.js"></script><link href="css/styles.css" rel="stylesheet"><!--  tarteaucitron -->
 
-<!--  tarteaucitron -->
 
-        <script src="/tarteaucitron/tarteaucitron.js"></script>
+<script src="/tarteaucitron/tarteaucitron.js"></script>
 
         <script type="text/javascript">
         tarteaucitron.init({
@@ -35,6 +34,7 @@
     	  "orientation": "middle", /* Banner position (top - bottom) */
        
           "groupServices": false, /* Group services by category */
+          "serviceDefaultState": "wait", /* Default state (true - wait - false) */
                            
     	  "showAlertSmall": false, /* Show the small banner on bottom right */
     	  "cookieslist": false, /* Show the cookie list */
@@ -67,6 +67,7 @@
           "mandatoryCta": true /* Show the disabled accept button when mandatory on */
         });
         </script>
+        
 
         <!-- Abla Analytics -->
 
@@ -102,8 +103,7 @@
 <script type="text/javascript">
         (tarteaucitron.job = tarteaucitron.job || []).push('openstreetmap');
         </script>
-        <div class="openstreetmap" data-url="url" width="width" height="height"></div>
-
+        
 <!-- Jarallax -->
 
 <script src="https://unpkg.com/jarallax@1/dist/jarallax.min.js"></script>
@@ -147,7 +147,7 @@
 
 <div class="editable-style section-element silex-id-1622142335489-1 hide-on-desktop"><div class="editable-style container-element silex-id-1622142335490-2 silex-element-content website-width prevent-draggable"><div class="editable-style text-element silex-id-1622142370480-3 silex-component-hamburger prevent-resizable prevent-auto-z-index hide-on-desktop"><div class="silex-element-content normal">
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1655555566562_808 closed">
+<div class="hamburger-menu_1655629171880_526 closed">
     <div class="hamburger-btn fixed">
       <span></span>
       <span></span>
@@ -164,7 +164,7 @@
             
                 <li><a href="cv-en-ligne.html">CV en ligne</a></li>
             
-                <li><a href="rgpd.html" class="">RGPD</a></li>
+                <li><a href="rgpd.html">RGPD</a></li>
             
                 <li><a href="referencement-google.html" class="page-link-active">Référencement Google</a></li>
             
@@ -192,13 +192,13 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    document.querySelector('.hamburger-menu_1655555566562_808').classList.remove('open');
-    document.querySelector('.hamburger-menu_1655555566562_808').classList.add('closed');
+    document.querySelector('.hamburger-menu_1655629171880_526').classList.remove('open');
+    document.querySelector('.hamburger-menu_1655629171880_526').classList.add('closed');
   }
   function open() {
     isOpen = true;
-    document.querySelector('.hamburger-menu_1655555566562_808').classList.add('open');
-    document.querySelector('.hamburger-menu_1655555566562_808').classList.remove('closed');
+    document.querySelector('.hamburger-menu_1655629171880_526').classList.add('open');
+    document.querySelector('.hamburger-menu_1655629171880_526').classList.remove('closed');
   }
   function toggle() {
     if(isOpen) close();
@@ -208,7 +208,7 @@
     close();
     move();
   }
-  var silexElement = document.querySelector('.hamburger-menu_1655555566562_808').closest('.editable-style');
+  var silexElement = document.querySelector('.hamburger-menu_1655629171880_526').closest('.editable-style');
   function move() {
     var data = window.silex
     var rect = silexElement.getBoundingClientRect();
@@ -216,10 +216,10 @@
       top: rect.top + data.scrollTop,
       left: rect.left + data.scrollLeft,
     };
-    var container = document.querySelector('.hamburger-menu_1655555566562_808 .nav-container');
+    var container = document.querySelector('.hamburger-menu_1655629171880_526 .nav-container');
     container.style.transform = 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)';
   }
-  document.querySelector('.hamburger-menu_1655555566562_808 .hamburger-btn').addEventListener('click', function() { toggle(); });
+  document.querySelector('.hamburger-menu_1655629171880_526 .hamburger-btn').addEventListener('click', function() { toggle(); });
   document.addEventListener('resize', scrollOrResize);
   document.addEventListener('scroll', scrollOrResize);
   scrollOrResize()
